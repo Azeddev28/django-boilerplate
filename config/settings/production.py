@@ -11,7 +11,9 @@ ALLOWED_HOSTS = []
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': '65.21.113.45:1521/ORCL',  # Oracle SID or service name
+        'USER': 'OWEQTOPEX',
+        'PASSWORD': 'PwdDb(#)23!ora',
     }
 }
